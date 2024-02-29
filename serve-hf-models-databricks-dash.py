@@ -44,7 +44,7 @@ from mlflow.tracking import MlflowClient
 model_name = dbutils.widgets.get("model_name")
 
 # Initialize the pipeline with the model specified in the widget, assuming it's a valid model name
-text_generation_pipeline = pipeline(task='text-generation', model=model_name, pad_token_id=50256, device=0)  # Use device=0 for GPU or device=-1 for CPU
+text_generation_pipeline = pipeline(task='text-generation', model=model_name, pad_token_id=50256, device_map="auto")  # Use device=0 for GPU or device=-1 for CPU
 
 
 # COMMAND ----------
