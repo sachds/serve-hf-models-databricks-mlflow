@@ -60,7 +60,7 @@ max_new_tokens = dbutils.widgets.get("max_tokens")
 
 temperature = dbutils.widgets.get("temperature")
 
-registered_model_name = dbutils.widgets.get("registered_model_name")
+registered_model_name = dbutils.widgets.get("registered_name")
 
 inference_config = {"max_new_tokens": max_new_tokens, "temperature": temperature}
 
