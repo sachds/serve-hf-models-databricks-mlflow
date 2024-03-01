@@ -56,7 +56,7 @@ text_generation_pipeline = pipeline(task='text-generation', model=model_name, pa
 
 # COMMAND ----------
 
-max_new_tokens = dbutils.widgets.get("max_new_tokens")
+max_new_tokens = dbutils.widgets.get("max_tokens")
 
 temperature = dbutils.widgets.get("temperature")
 
