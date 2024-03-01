@@ -56,11 +56,11 @@ text_generation_pipeline = pipeline(task='text-generation', model=model_name, pa
 
 # COMMAND ----------
 
-max_new_tokens = db.utils.widgets.get("max_new_tokens")
+max_new_tokens = dbutils.widgets.get("max_new_tokens")
 
-temperature = db.utils.widgets.get("temperature")
+temperature = dbutils.widgets.get("temperature")
 
-registered_model_name = db.utils.widgets.get("registered_model_name")
+registered_model_name = dbutils.widgets.get("registered_model_name")
 
 inference_config = {"max_new_tokens": max_new_tokens, "temperature": temperature}
 
