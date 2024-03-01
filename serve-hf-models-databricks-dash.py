@@ -39,7 +39,7 @@ from mlflow.tracking import MlflowClient
 # COMMAND ----------
 
 
-
+import torch
 # Ensure dbutils is available and you have a widget named 'model' set up
 model_name = dbutils.widgets.get("model_name")
 device = 0 if torch.cuda.is_available() else -1
