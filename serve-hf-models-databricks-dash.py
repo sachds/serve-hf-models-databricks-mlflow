@@ -38,9 +38,7 @@ from mlflow.tracking import MlflowClient
 
 # COMMAND ----------
 
-from numba import cuda
-device = cuda.get_current_device()
-device.reset()
+
 
 
 # import torch
