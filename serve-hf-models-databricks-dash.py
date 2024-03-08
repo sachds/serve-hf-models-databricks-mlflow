@@ -41,7 +41,7 @@ from mlflow.tracking import MlflowClient
 
 # import torch
 # # Ensure dbutils is available and you have a widget named 'model' set up
-# model_name = dbutils.widgets.get("model_name")
+model_name = dbutils.widgets.get("model_name")
 # device = 0 if torch.cuda.is_available() else -1
 
 # Initialize the pipeline with the model specified in the widget, assuming it's a valid model name
